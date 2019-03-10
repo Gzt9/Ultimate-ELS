@@ -5024,9 +5024,9 @@
 		skip_lit_enabled = <0>;
 		cl_busy_ratio = <65>;
 		/* single_freq is parsed from ECT */
-		dual_freq = <1794000>;
-		triple_freq = <1690000>;
-		quad_freq = <1690000>;
+		dual_freq = <2314000>;
+		triple_freq = <1794000>;
+		quad_freq = <1794000>;
 		cal-id = <ACPM_DVFS_CPUCL1>;
 	};
 
@@ -5149,7 +5149,9 @@
 					const-type = <CONSTRAINT_MIN>;
 					dm-type = <DM_MIF>;
 						/*  cpu     mif  */
-					table = < 1690000  845000
+					table = < 1950000  845000
+						  1794000  845000
+						  1690000  845000
 						  1456000  676000
 						  1248000  676000
 						  1053000  676000
@@ -5175,8 +5177,8 @@
 			dm-type = <DM_CPU_CL1>;
 
 			min-freq = <650000>;
-			max-freq = <1690000>;
-			policy-max = <1690000>;
+			max-freq = <1794000>;
+			policy-max = <1794000>;
 
 			/* PM QoS Class ID*/
 			pm_qos-min-class = <5>;
