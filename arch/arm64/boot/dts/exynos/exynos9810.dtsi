@@ -321,7 +321,7 @@
 				compatible = "exynos,idle-state";
 				arm,psci-suspend-param = <0x0010000>;
 				entry-latency-us = <70>;
-				exit-latency-us = <180>;
+				exit-latency-us = <160>;
 				min-residency-us = <2000>;
 				status = "okay";
 			};
@@ -331,7 +331,7 @@
 				compatible = "exynos,idle-state";
 				arm,psci-suspend-param = <0x0010000>;
 				entry-latency-us = <210>;
-				exit-latency-us = <230>;
+				exit-latency-us = <235>;
 				min-residency-us = <3500>;
 				status = "okay";
 			};
